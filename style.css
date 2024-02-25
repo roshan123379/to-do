@@ -1,0 +1,434 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 2cm 100%;
+    grid-template-columns: 1fr;    
+}
+
+.sidebar{
+    width: 17%;
+    top: 2cm;
+    position: fixed;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;   
+}
+
+.header{
+    height: 1.6cm;
+    position: fixed;
+    padding: 0.2cm 0;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-bottom: 2px solid blue;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 239, 247);
+   
+}
+.hdiv1 {
+    width: 0.7cm;
+    height: 0.7cm;
+    margin-left: 28px;
+    mix-blend-mode: darken;
+    
+}
+.content{
+    height: 200%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 18%;
+}
+.logo{
+    width: 1cm;
+    height: 1cm;
+    margin-left: 10px;
+}
+
+.profile{
+   margin: 0.7cm 0;
+    display: flex;
+    align-items: center;
+    
+}
+.roshan{
+
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10%;
+}
+.search{
+    margin-left: 10%;
+    width: 0.5cm;
+    height: 0.5cm;
+}
+.img1,.img2,.img3,.img4{
+    width: 0.8cm;
+    height: 0.8cm;
+    margin-left: 30px;
+    margin-right: 5%;
+}
+.div1,.div2,.div3,.div4{
+    
+    display: flex;
+    height: 1cm;
+    align-items: center;
+    margin-top: 0.5cm;
+}
+.div1:hover,.div2:hover,.div3:hover,.div4.div4:hover {
+    background-color: rgb(231, 228, 228);
+    border-right: 10px solid orange;
+    font-weight: bold;
+}
+.all,.today,.week,.important,.addproject{
+    font-size: 20px;
+    
+}
+
+.projects{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.div5{
+    border-bottom: 2px solid rgb(33, 34, 37);
+    margin:0.5cm 0.4cm;
+    
+}
+.hdiv2{
+    width: 1.5cm;
+    height: 1.5cm;
+    margin-left: 15px;
+}
+.heading{
+    font-size: 34px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.todo{
+    color: blue;
+    margin-right: 10px;
+}
+.cdiv,.cdiv2,.cdiv3,.cdiv4{
+    padding-top: 1cm ;
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
+    background-color: rgb(219, 239, 247);
+    height: 150%;
+}
+.alltask,.todaytask,.thisweektask,.importanttask{
+    font-size: 36px;
+    text-align: center;
+    height: 1.5cm;
+    background-color: rgb(87, 94, 227);
+    border-radius: 5px;
+    padding-top: 0.7cm;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+input{
+    width: 65%;
+    height: 0.8cm;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 0.5cm;
+    box-shadow: 2px 2px 6px rgb(182, 177, 177);
+    padding-left: 0.2cm;
+    background-color: rgb(150, 230, 252);
+}
+button{
+    height: 0.8cm;
+    background-color: blue;
+    font-size: 18px;
+    color: white;
+    width: 15%;
+    margin-left: 5%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 6px rgb(182, 177, 177);
+}
+.projectTitle{
+    width: 99%;
+    height: 0.7cm;
+    background-color: rgb(179, 179, 220);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin-top: 0.5cm;
+    padding-top: 0.2cm;
+    padding-left: 0.2cm;
+    
+}
+
+.bigdiv{
+    width: 29%;
+    height: 13cm;
+    border-radius: 10px;
+    background-color:#fefcfe;
+    position:fixed;
+    left: 35%;
+    right: 35%;
+    top: 2cm;
+    box-shadow: 3px 3px 20px gray;    
+
+}
+.giveTodo{
+    width: 29%;
+    height: 11.5cm;
+    background-color:#fefcfe;
+    margin-bottom: 0.2cm;
+
+}
+form button{
+
+    margin-left: 43%;
+}
+
+.giveTodo{
+    position:fixed;
+    left: 35%;
+    right: 35%;
+    top: 3cm;
+}
+.giveTodo input{
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    width: 89%;
+}
+.addproject{
+    text-align: center;
+    margin:0.3cm 0;
+}
+.addTask{
+    text-align: center;
+    font-size: 18px;
+    margin: 0.5cm 0;
+}
+.projectFormDiv{
+    height: 1.5cm;
+    margin-bottom: 0.5cm;
+    border-bottom: 2px solid rgb(69, 6, 255);
+    
+}
+.addtaskdiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1cm;
+    gap: 0.2cm;
+    margin-left: 1cm;
+    margin-top: 0.8cm;
+    font-size: 18px;
+    cursor: pointer;
+}
+.addtaskdiv img{
+ width: 0.6cm;
+ height: 0.6cm;
+}
+.cancel{
+    margin-top: 0.5cm;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+.projectName{
+    
+    width: 50%;
+    border-radius: 5px;
+    height: 0.7cm;
+    box-shadow: 2px 2px 3px gray;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    margin-left: 0.1cm;
+    background-color: rgb(194, 222, 195);
+}
+.div ,.todaytaskdiv{
+    padding-top: 0.5cm;
+    margin-bottom: 1.5cm;
+    padding-left: 1cm;
+    background-color: rgb(188, 230, 246);
+    width: 96%;
+    
+}
+.cont1,.cont2,.cont3,.cont4,.cont5{
+    width: 55%;
+    display: flex;
+    margin: 0.5cm 0.5cm;
+    height: .8cm;
+}
+.paradiv1,.paradiv2,.paradiv3,.paradiv4,.paradiv5{
+    width: 80%;
+    background-color: white;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+
+}
+.inputdiv1,.inputdiv2,.inputdiv3,.inputdiv4,.inputdiv5{
+    width: 20%;
+    margin-top: 0.1cm;
+}
+#check{
+    width: 0.6cm;
+    height: 0.6cm;
+}
+.todaytaskdiv{
+    margin-top: 1cm;
+}
+
+.Remove{  
+    margin: 0.5cm 15%;
+} 
+.allproject{
+    display: flex;
+    width: 6cm;
+    margin: 0.5cm;
+}
+
+.div6 p{
+    background-color: rgb(188, 230, 246);
+    box-shadow: none;
+    width: 4cm;
+}
+.div6 button{
+    font-size: 16px;
+    margin-top: 3px;
+    width: 2.3cm;
+}
+
+@media (max-width:412px){
+    .cdiv,.cdiv2,.cdiv3,.cdiv4{
+        padding-top: 1cm ;
+        padding-left: 1cm;
+        padding-right: 1cm;
+        
+    }
+    .container{
+        display: grid;
+        grid-template-rows: 2cm 143%;
+        grid-template-columns: 1fr;
+        
+    }
+    .content{
+        margin-left: 0;
+        height: auto;
+    }
+    .header{
+        grid-column: 1/2;
+        position: fixed;
+    }
+    .sidebar{
+        display: none;
+        width: 6cm;
+        grid-column:none;
+        grid-row: none;
+        position: fixed;
+    }
+    .alltask,.todaytask,.thisweektask,.importanttask{
+        font-size: 28px;
+        height: 1.5cm;  
+    }
+    .giveTodo{
+        position:fixed;
+        left: 15%;
+        right: 15%;
+        top: 3.5cm;
+    }
+    .giveTodo input{
+        margin-left: 0.3cm;
+        margin-right: 0.3cm;
+        width: 100%;
+    }
+    .bigdiv{
+        width: 70%;
+        height: 13cm;
+        border-radius: 10px;
+        background-color:#fefcfe;
+        position:fixed;
+        left: 15%;
+        right: 15%;
+        top: 2.5cm;
+        box-shadow: 3px 3px 20px gray; 
+    }
+    
+    .div6 button{
+        font-size: 11px;
+        width: 1.3cm;
+        height: 0.7cm;
+        margin-right: 0.3cm;
+    }
+    .div6 p{
+        width: 3cm;
+    }
+    .giveTodo{
+        width: 60%;
+        height: 11.5cm;
+        background-color:#fefcfe;
+        margin-bottom: 0.2cm;
+    }
+    form button{
+        width: 1.5cm;
+        margin-left: 45%;
+    }
+    .addproject{
+        margin-left: 0.8cm;
+        margin-bottom: 0.1cm;
+        margin-top: 0.3cm;
+    }
+    .addTask{
+        padding-left: 0.6cm;
+        width: 100%;
+        border-top: 2px solid blue;
+        padding-top: 0.3cm;
+    }
+    .projectFormDiv{
+        border-bottom: none;
+        
+    }
+    .projectName{
+        width: 6cm;
+    }
+    .cont1,.cont2,.cont3,.cont4,.cont5{
+        width: 6cm; 
+    }
+    .paradiv1,.paradiv2,.paradiv3,.paradiv4,.paradiv5{
+        width: 5.5cm;
+        
+    }
+    .inputdiv1,.inputdiv2,.inputdiv3,.inputdiv4,.inputdiv5{
+        width: 1cm;
+        margin-top: 0.1cm;
+    }
+    
+    .div ,.todaytaskdiv{
+        padding-right: 0.3cm;
+        padding-left: 0.3cm;
+        width: 6.5cm;
+        
+    }
+    .Remove{
+        width: 1.9cm;
+        margin: 0.5cm 35%;
+    } 
+    .roshan{
+        font-size: 17px;
+    }
+}
